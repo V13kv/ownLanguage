@@ -4,12 +4,12 @@
 
 #include "include/errorHander.hpp"
 
-void onError(char *fmt, ...)
+[[noreturn]] void onError(const char *fmt, ...)
 {
-    va_list arg;
-    va_start(arg, fmt);
-    vprintf(fmt, arg);
-    va_end(arg);
+    va_list args;
+    va_start(args, fmt);
+    vfprintf(stderr, fmt, args);
+    va_end(args);
 
     exit(EXIT_FAILURE);
 }

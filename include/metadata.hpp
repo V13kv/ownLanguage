@@ -6,7 +6,10 @@
 #endif
 
 #include <stdio.h>
+#include "include/Lexer/lexer.hpp"
 
-extern_ int lineNumber;
+extern_ int LineNumber;
+extern_ FILE *FileStream;
+extern_ token_t Token;
 
 #endif	// METADATA_HPP

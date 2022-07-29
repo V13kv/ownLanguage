@@ -1,6 +1,6 @@
 #ifndef ERRORHANDER_HPP
 #define ERRORHANDER_HPP
 
-void onError(char *fmt, ...);
+[[noreturn]] void onError(const char *fmt, ...);
 
 #endif	// ERRORHANDER_HPP

@@ -8,6 +8,7 @@ enum class TOKEN_TYPES
     ASTERISK,
     FORWARD_SLASH,
     NUMBER_LITERAL,
+    EOI,                // stands for "End Of Input"
 };
 
 typedef struct
