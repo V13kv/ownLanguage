@@ -1,3 +1,6 @@
+// TODO: #1 Done some file structural improvements @V13kv
+// TODO: #3 #2 Add explanations on RDP and Pratt parsing algorithms @V13kv
+
 #include <stdio.h>
 
 #define extern_
